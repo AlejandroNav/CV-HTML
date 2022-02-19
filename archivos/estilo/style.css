@@ -141,6 +141,7 @@ table {
 
 html {
     font-size: 16px;
+    font-family: 'Nunito', sans-serif;
 }
 
 header {
@@ -149,25 +150,84 @@ header {
 
 h1 {
     font-size: 3rem;
+    font-family: 'Martel', serif;
+    font-weight: 800;
+    margin: 0 1rem;
+    padding: 0 2rem 2rem .7rem;
+    background-color: #263547;
+    color: #d0836f;
+    text-transform: uppercase;
 }
 
 h2 {
     font-size: 2rem;
+    font-family: 'Martel', serif;
+    font-weight: 600;
+    margin: 1rem;
+    padding: .8rem;
+    color: #d0836f;
+    text-transform: uppercase;
+    background-color: #263547;
+    margin-top: 1.4em;
+}
+
+#subti {
+    margin-top: 0.5rem;
+    padding-bottom: .5rem;
+}
+
+.trabajo {
+    color: #e2dddd;
+    font-size: 1.1em;
+    font-weight: 600;
 }
 
 h3 {
     font-size: 1.6rem;
+    margin: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 1rem;
+}
+
+li {
+    margin: .25rem 1rem;
 }
 
 
 /* Clases personalizadas  */
 
 .principal {
-    background-color: rgba(255, 10, 10, 0.09);
+    background-color: #d0836f;
+    color: #263547;
+    padding: 3em;
+}
+
+.principal h3 {
+    color: #dfe0e0;
+    background-color: #d0836f;
 }
 
 .secundario {
-    background-color: rgba(0, 0, 255, 0.09);
+    background-color: #dfe0e0;
+    color: #263547;
+    padding: 3em;
+}
+
+.secundario h2,
+h3 {
+    background-color: #263547;
+    color: #dfe0e0;
+}
+
+.trabajo {
+    color: #263547;
+    font-size: 1.3em;
+    font-weight: 800;
+    letter-spacing: 2px;
 }
 
 .skewed {
@@ -176,9 +236,9 @@ h3 {
     bottom: 0;
     right: 0;
     left: 0;
-    width: 50%;
-    height: 50%;
-    background: #2c3e50;
+    width: 70%;
+    height: 15rem;
+    background: #2c3e501c;
     z-index: -7;
     transform: skewY(-36deg);
     transform-origin: top left;
@@ -190,9 +250,10 @@ h3 {
     bottom: 0;
     right: 0;
     left: 0;
+    float: right;
     width: 100%;
-    height: 100%;
-    background: #d0826f;
+    height: 50%;
+    background: #d0836f25;
     z-index: -8;
     transform: skewY(28deg);
     transform-origin: top right;
