@@ -139,6 +139,12 @@ table {
 
 /* Termina el reset de CSS */
 
+
+/* Termina el reset de CSS */
+
+
+/* Termina el reset de CSS */
+
 html {
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
@@ -146,7 +152,6 @@ html {
 
 h1 {
     font-size: 3rem;
-    font-family: 'Martel', serif;
     font-weight: 800;
     margin: 0 1rem;
     padding: 0 2rem 2rem .7rem;
@@ -193,11 +198,15 @@ li {
     margin: .25rem 1rem;
 }
 
-
-/* Clases personalizadas  */
-
 .principal {
     background-color: #d0836f;
+    color: #263547;
+    padding: 3em;
+    z-index: 12;
+}
+
+.secundario {
+    background-color: #dfe0e0;
     color: #263547;
     padding: 3em;
 }
@@ -205,12 +214,6 @@ li {
 .principal h3 {
     color: #243131;
     background-color: #d0836f;
-}
-
-.secundario {
-    background-color: #dfe0e0;
-    color: #263547;
-    padding: 3em;
 }
 
 .secundario h2,
@@ -226,95 +229,93 @@ h3 {
     letter-spacing: 2px;
 }
 
-.skewed {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    width: 70%;
-    height: 15rem;
-    background: #2c3e501c;
-    z-index: -7;
-    transform: skewY(-36deg);
-    transform-origin: top left;
-}
-
-.skewed2 {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    float: right;
-    width: 100%;
-    height: 50%;
-    background: #d0836f25;
-    z-index: -8;
-    transform: skewY(28deg);
-    transform-origin: top right;
-}
-
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 950px) {
     h1 {
-        font-size: 4rem;
-        margin: 0;
-        padding: 0;
-        background-color: white;
+        color: #d0836f;
+        font-size: 4.5em;
+        background-color: #ffffff;
+        margin-top: 4em;
+        width: 500px;
     }
     h2 {
-        font-size: 2rem;
-        font-family: 'Martel', serif;
-        font-weight: 600;
-        margin: 1rem;
-        padding: .8rem;
         color: #d0836f;
-        text-transform: uppercase;
-        background-color: #263547;
-        margin-top: 1.4em;
-    }
-    #subti {
-        margin-top: 0.5rem;
-        padding-bottom: .5rem;
-    }
-    .trabajo {
-        color: #e2dddd;
-        font-size: 1.1em;
-        font-weight: 600;
+        background-color: #ffffff;
+        font-size: 1.3rem;
+        margin-top: .2rem;
     }
     h3 {
-        font-size: 1.6rem;
-        margin: 1rem;
-        font-weight: 400;
-        text-transform: uppercase;
-    }
-    p {
-        margin: 1rem;
-    }
-    li {
-        margin: .25rem 1rem;
+        font-size: 1.3rem;
+        background: none;
     }
     .principal {
         background: none;
     }
     .principal h3 {
         color: #243131;
-        background-color: #d0836f;
+        background-color: #ffffff;
     }
-    .secundario {
-        background-color: #dfe0e0;
+    .secundario h3 {
         color: #263547;
-        padding: 3em;
+        background-color: #dfe0e0;
     }
-    .secundario h2,
-    h3 {
+    .secundario h2 {
         background-color: #263547;
         color: #dfe0e0;
+        font-size: 1.5em;
     }
-    .trabajo {
-        color: #263547;
-        font-size: 1.3em;
-        font-weight: 800;
-        letter-spacing: 2px;
+    .photo {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        background-image: url("https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Ordering_Flex_Items/align11.png");
+        position: relative;
+        z-index: 200;
+        margin: 5em 3em;
+    }
+    .flexo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--s1);
+        flex-direction: row-reverse;
+    }
+    .flexo> :last-child {
+        flex-basis: 4ch;
+        flex-grow: 1;
+    }
+    .flexo> :first-child {
+        flex-basis: 0;
+        flex-grow: 999;
+        min-inline-size: 40%;
+    }
+    .skewed {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 70%;
+        height: 15rem;
+        background: #2c3e50fa;
+        z-index: 10;
+        transform: skewY(-36deg);
+        transform-origin: top left;
+    }
+    #problemz {
+        z-index: 133;
+        position: relative;
+    }
+    .skewed2 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        float: right;
+        width: 100%;
+        height: 40%;
+        background: rgb(208, 131, 111);
+        z-index: 11;
+        transform: skewY(18deg);
+        transform-origin: top right;
     }
 }
