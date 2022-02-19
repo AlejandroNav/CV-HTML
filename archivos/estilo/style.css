@@ -144,10 +144,6 @@ html {
     font-family: 'Nunito', sans-serif;
 }
 
-header {
-    background-color: #263547;
-}
-
 h1 {
     font-size: 3rem;
     font-family: 'Martel', serif;
@@ -207,7 +203,7 @@ li {
 }
 
 .principal h3 {
-    color: #dfe0e0;
+    color: #243131;
     background-color: #d0836f;
 }
 
@@ -257,4 +253,68 @@ h3 {
     z-index: -8;
     transform: skewY(28deg);
     transform-origin: top right;
+}
+
+@media screen and (min-width: 900px) {
+    h1 {
+        font-size: 4rem;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+    }
+    h2 {
+        font-size: 2rem;
+        font-family: 'Martel', serif;
+        font-weight: 600;
+        margin: 1rem;
+        padding: .8rem;
+        color: #d0836f;
+        text-transform: uppercase;
+        background-color: #263547;
+        margin-top: 1.4em;
+    }
+    #subti {
+        margin-top: 0.5rem;
+        padding-bottom: .5rem;
+    }
+    .trabajo {
+        color: #e2dddd;
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+    h3 {
+        font-size: 1.6rem;
+        margin: 1rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    p {
+        margin: 1rem;
+    }
+    li {
+        margin: .25rem 1rem;
+    }
+    .principal {
+        background: none;
+    }
+    .principal h3 {
+        color: #243131;
+        background-color: #d0836f;
+    }
+    .secundario {
+        background-color: #dfe0e0;
+        color: #263547;
+        padding: 3em;
+    }
+    .secundario h2,
+    h3 {
+        background-color: #263547;
+        color: #dfe0e0;
+    }
+    .trabajo {
+        color: #263547;
+        font-size: 1.3em;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
 }
