@@ -267,7 +267,7 @@ h3 {
         height: 300px;
         width: 300px;
         border-radius: 50%;
-        background-image: url("https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Ordering_Flex_Items/align11.png");
+        background-image: url(profile-pic.png);
         position: relative;
         z-index: 200;
         margin: 5em 3em;
